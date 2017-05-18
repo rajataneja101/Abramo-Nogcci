@@ -127,7 +127,7 @@ $p=$_GET['pro_name'];
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1 animate-box">
-					<div class="owl-carousel owl-carousel-fullwidth product-carousel">
+					<div class="owl-carousel owl-carousel-fullwidth product-carousel slides">
 						<div class="item">
 							<div class="active text-center">
 								<figure>
@@ -153,7 +153,7 @@ $p=$_GET['pro_name'];
 						
 					</div>
 					<div class="row animate-box">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading" >
 							<h2><?php echo $p?></h2>
 							<!--<p>
 								<a href="#" class="btn btn-primary btn-outline btn-lg">Add to Cart</a>

@@ -1,20 +1,13 @@
-<?php
-$con = mysql_connect("localhost","root","root");
-$db=mysql_select_db("abramo");
-// Check connection
-  $q="SELECT * FROM shoes";
-$results=mysql_query($q);
-  ?>
 <!DOCTYPE HTML>
 <html>
-		<head>
+	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Abramo Nogcci</title>
+	<title>Shop &mdash; Free Website Template, Free HTML5 Template by gettemplates.co</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Best in class shoes" />
-	
-	
+	<meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="gettemplates.co" />
 
 	<!-- 
 	//////////////////////////////////////////////////////
@@ -72,89 +65,62 @@ $results=mysql_query($q);
 	<body>
 		
 	<div class="fh5co-loader"></div>
-	      <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Want something new?! Upload your own idea</h4>
-        </div>
-        <div class="modal-body">
-          
-         <form method="post" action="upload.php"  enctype="multipart/form-data">
-    <table class="table1">
-    <tr>
-        <td><label style="font-size:18px;">Name</label></td>
-        <td width="30"></td>
-        <td><input type="text" name="first_name" placeholder="Name" required /></td>
-    </tr>
-    <tr>
-        <td><label style="font-size:18px; font-family: 'Tangerine';">Email</label></td>
-        <td width="30"></td>
-        <td><input type="email" name="last_name" placeholder="Email" required /></td>
-    </tr>
-    <tr>
-        <td><label style="font-size:18px;">Select your Image</label></td>
-        <td width="30"></td>
-        <td><label class="btn btn-default btn-file">
-    Browse <input type="file"  name="image"  style="display: none;">
-</label></td>
-
-    </tr>
-</table>
-    </div>
-    <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-    <button type="submit" name="Submit" class="btn btn-primary">Upload</button>
-    </div>
-</form>
-        </div>
-             </div>
-      
-    </div>
-  </div>
-  <script type="text/javascript">
-   setTimeout(function() {
-    $('#myModal').modal();
-}, 2000);
-</script>
+	
 	<div id="page">
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Abramo Nogcci</a></div>
+					<div id="fh5co-logo"><a href="index.html">Shop.</a></div>
 				</div>
 				<div class="col-md-6 col-xs-6 text-center menu-1">
 					<ul>
 						<li class="has-dropdown">
-							<a href="product.php">Collection</a>
-							<!--<ul class="dropdown">
+							<a href="product.html">Shop</a>
+							<ul class="dropdown">
 								<li><a href="single.html">Single Shop</a></li>
-							</ul>-->
+							</ul>
 						</li>
 						<li><a href="about.html">About</a></li>
-						
+						<li class="has-dropdown">
+							<a href="services.html">Services</a>
+							<ul class="dropdown">
+								<li><a href="#">Web Design</a></li>
+								<li><a href="#">eCommerce</a></li>
+								<li><a href="#">Branding</a></li>
+								<li><a href="#">API</a></li>
+							</ul>
+						</li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
-				
+				<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
+					<ul>
+						<li class="search">
+							<div class="input-group">
+						      <input type="text" placeholder="Search..">
+						      <span class="input-group-btn">
+						        <button class="btn btn-primary" type="button"><i class="icon-search"></i></button>
+						      </span>
+						    </div>
+						</li>
+						<li class="shopping-cart"><a href="#" class="cart"><span><small>0</small><i class="icon-shopping-cart"></i></span></a></li>
+					</ul>
+				</div>
 			</div>
 			
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/thumb/4/1.jpg);">
+	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_2.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Products</h1>
-							<h2>You will be proud to have them!</h2>
+							<h1>Product</h1>
+							<h2>Free html5 templates Made by <a href="http://freehtml5.co" target="_blank">freehtml5.co</a></h2>
 						</div>
 					</div>
 				</div>
@@ -167,49 +133,14 @@ $results=mysql_query($q);
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<span>Cool Stuff</span>
-					<h2>Shoes</h2>
-					
+					<h2>Products.</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 				</div>
 			</div>
-			<form action="single.php" method="post">
-			 <?php
-			 $array=array();
- while($row = mysql_fetch_assoc($results,MYSQL_ASSOC)) {
-  $array[]=$row;
-  }
-  for($j=0;$j<sizeof($array);$j++)
-{
-	if($j%3==0)
-	{
- 	?>
-
 			<div class="row">
-			<?php
-		}
-		?>
-							<div class="col-md-4 text-center animate-box">
+				<div class="col-md-4 text-center animate-box">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(images<?php print $array[$j]['path']?>);">
-							<div class="inner">
-								<p>
-									<?
-									echo "<a class='icon' href=single.php?rajat=".$array[$j]['id']."&pro_name=".urlencode($array[$j]['name'])."><i class='icon-eye'></i></a>";
-									?>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html"><?php 
-							echo $array[$j]['name'];
-							?></a></h3>
-							
-						</div>
-					</div>
-				</div>
-				
-				<!--<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images<?php print $row['path']?>);">
+						<div class="product-grid" style="background-image:url(images/product-1.jpg);">
 							<div class="inner">
 								<p>
 									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
@@ -218,17 +149,14 @@ $results=mysql_query($q);
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html"><?php 
-							print $row['name'+1];
-							
-							?></a></h3>
-							
+							<h3><a href="single.html">Hauteville Concrete Rocking Chair</a></h3>
+							<span class="price">$350</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 text-center animate-box">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(images<?php print $row['path']?>);">
+						<div class="product-grid" style="background-image:url(images/product-2.jpg);">
 							<div class="inner">
 								<p>
 									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
@@ -237,22 +165,28 @@ $results=mysql_query($q);
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html"><?php 
-							print $row['name'+2];
-							
-							?></a></h3>
-							
+							<h3><a href="single.html">Pavilion Speaker</a></h3>
+							<span class="price">$600</span>
 						</div>
 					</div>
-				</div>-->
-				<?
-				}
-				if($j%3==0)
-				echo "</div>";
-mysql_close();
-?>
-			
-			<!--
+				</div>
+				<div class="col-md-4 text-center animate-box">
+					<div class="product">
+						<div class="product-grid" style="background-image:url(images/product-3.jpg);">
+							<div class="inner">
+								<p>
+									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
+									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
+								</p>
+							</div>
+						</div>
+						<div class="desc">
+							<h3><a href="single.html">Ligomancer</a></h3>
+							<span class="price">$780</span>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-4 text-center animate-box">
 					<div class="product">
@@ -302,8 +236,7 @@ mysql_close();
 						</div>
 					</div>
 				</div>
-			</div>-->
-			<!--
+			</div>
 			<div class="row">
 				<div class="col-md-4 text-center animate-box">
 					<div class="product">
@@ -354,11 +287,10 @@ mysql_close();
 					</div>
 				</div>
 			</div>
-			-->
 		</div>
 	</div>
 
-		<div id="fh5co-started">
+	<div id="fh5co-started">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -368,15 +300,15 @@ mysql_close();
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2">
-					<form class="form-inline" action="newsletter.php" method="post">
+					<form class="form-inline">
 						<div class="col-md-6 col-sm-6">
 							<div class="form-group">
 								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" name="email" placeholder="Email" >
+								<input type="email" class="form-control" id="email" placeholder="Email">
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6">
-							<button type="submit" class="btn btn-default btn-block" name="Submit">Subscribe</button>
+							<button type="submit" class="btn btn-default btn-block">Subscribe</button>
 						</div>
 					</form>
 				</div>
@@ -388,29 +320,46 @@ mysql_close();
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-4 fh5co-widget">
-					<h3>Abramo Nogcci</h3>
-					<p>Best in its type!</p>
+					<h3>Shop.</h3>
+					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 					<ul class="fh5co-footer-links">
-						<li><a href="about.html">About</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Help</a></li>
 						<li><a href="#">Contact</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Meetups</a></li>
 					</ul>
 				</div>
 
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 					<ul class="fh5co-footer-links">
-						<li><a href="product.php">Shop</a></li>
+						<li><a href="#">Shop</a></li>
 						<li><a href="#">Privacy</a></li>
-						
+						<li><a href="#">Testimonials</a></li>
+						<li><a href="#">Handbook</a></li>
+						<li><a href="#">Held Desk</a></li>
 					</ul>
 				</div>
 
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
+					<ul class="fh5co-footer-links">
+						<li><a href="#">Find Designers</a></li>
+						<li><a href="#">Find Developers</a></li>
+						<li><a href="#">Teams</a></li>
+						<li><a href="#">Advertise</a></li>
+						<li><a href="#">API</a></li>
+					</ul>
+				</div>
 			</div>
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
-				
+					<p>
+						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
+						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://blog.gessato.com/" target="_blank">Gessato</a> &amp; <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+					</p>
 					<p>
 						<ul class="fh5co-social-icons">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
