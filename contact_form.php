@@ -20,15 +20,15 @@ if(mysql_query($query1))
 	<title>Abramo Nogcci</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Best in class shoes" />
-	
-	
 
-	<!-- 
+
+
+	<!--
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE 
+	FREE HTML5 TEMPLATE
 	DESIGNED & DEVELOPED by FreeHTML5.co
-		
+
 	Website: 		http://freehtml5.co/
 	Email: 			info@freehtml5.co
 	Twitter: 		http://twitter.com/fh5co
@@ -50,7 +50,7 @@ if(mysql_query($query1))
 
 	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -77,34 +77,52 @@ if(mysql_query($query1))
 
 	</head>
 	<body>
-		
+
 	<div class="fh5co-loader"></div>
-	
+
 	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Abramo Nogcci</a></div>
+		<nav class="fh5co-nav" role="navigation">
+			<div class="container">
+				<div class="row">
+					<style type="text/css">
+					   .mobileShow { display: none;}
+					   /* Smartphone Portrait and Landscape */
+					   @media only screen
+					   and (min-device-width : 320px)
+					   and (max-device-width : 480px){ .mobileShow { display: inline;}}
+					</style>
+
+					<div class="col-md-3 col-xs-2">
+						<div class="mobileShow">
+						<div id="fh5co-logo"><a href="index.html">Abramo</a></div>
+						<div id="fh5co-logo"><a href="index.html">Nogcci</a></div>
+					</div>
 				</div>
-				<div class="col-md-6 col-xs-6 text-center menu-1">
+
+					<div class="col-md-6 col-xs-6 text-center menu-1">
 					<ul>
-						<li class="has-dropdown">
-							<a href="product.php">Collection</a>
-							<!--<ul class="dropdown">
-								<li><a href="single.html">Single Shop</a></li>
-							</ul>-->
-						</li>
-						<li><a href="about.html">About</a></li>
-						
-						<li><a href="contact.html">Contact</a></li>
+						<div id="content-desktop">
+					<li><div id="fh5co-logo"><a href="index.html"><h3><strong>Abramo Nogcci</strong></h3></a></div></li>
+	</div>
 					</ul>
+					<hr>
+						<ul>
+							<li> <!--class="has-dropdown"-->
+								<a href="product.php">Collection</a>
+								<!--<ul class="dropdown">
+									<li><a href="single.html">Single Shop</a></li>
+								</ul>-->
+							</li>
+							<li><a href="about.html">About us</a></li>
+
+							<li><a href="contact.html">Contact us</a></li>
+						</ul>
+					</div>
+
 				</div>
-				
+
 			</div>
-			
-		</div>
-	</nav>
+		</nav>
 
 	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/thumb/4/1.jpg);">
 		<div class="overlay"></div>
@@ -114,14 +132,14 @@ if(mysql_query($query1))
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Thanks!</h1>
-							
+
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-	
+
 
 		<div id="fh5co-started">
 		<div class="container">
@@ -168,7 +186,7 @@ if(mysql_query($query1))
 					<ul class="fh5co-footer-links">
 						<li><a href="product.php">Shop</a></li>
 						<li><a href="#">Privacy</a></li>
-						
+
 					</ul>
 				</div>
 
@@ -176,7 +194,7 @@ if(mysql_query($query1))
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
-				
+
 					<p>
 						<ul class="fh5co-social-icons">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -195,7 +213,7 @@ if(mysql_query($query1))
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -210,7 +228,7 @@ if(mysql_query($query1))
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
-	
+
 	<!-- Main -->
 	<script src="js/main.js"></script>
 

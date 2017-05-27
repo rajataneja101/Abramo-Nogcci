@@ -13,15 +13,15 @@ $results=mysql_query($q);
 	<title>Abramo Nogcci</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Best in class shoes" />
-	
-	
 
-	<!-- 
+
+
+	<!--
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE 
+	FREE HTML5 TEMPLATE
 	DESIGNED & DEVELOPED by FreeHTML5.co
-		
+
 	Website: 		http://freehtml5.co/
 	Email: 			info@freehtml5.co
 	Twitter: 		http://twitter.com/fh5co
@@ -43,7 +43,7 @@ $results=mysql_query($q);
 
 	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -70,11 +70,11 @@ $results=mysql_query($q);
 
 	</head>
 	<body>
-		
+
 	<div class="fh5co-loader"></div>
-	      <div class="modal fade" id="myModal" role="dialog">
+	 <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
+
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -82,7 +82,7 @@ $results=mysql_query($q);
           <h4 class="modal-title">Want something new?! Upload your own idea</h4>
         </div>
         <div class="modal-body">
-          
+
          <form method="post" action="upload.php"  enctype="multipart/form-data">
     <table class="table1">
     <tr>
@@ -91,17 +91,14 @@ $results=mysql_query($q);
         <td><input type="text" name="first_name" placeholder="Name" required /></td>
     </tr>
     <tr>
-        <td><label style="font-size:18px; font-family: 'Tangerine';">Email</label></td>
+        <td><label style="font-size:18px;">Email</label></td>
         <td width="30"></td>
         <td><input type="email" name="last_name" placeholder="Email" required /></td>
     </tr>
     <tr>
         <td><label style="font-size:18px;">Select your Image</label></td>
         <td width="30"></td>
-        <td><label class="btn btn-default btn-file">
-    Browse <input type="file"  name="image"  style="display: none;">
-</label></td>
-
+        <td><input type="file" name="image"  class="btn btn-primary"></td>
     </tr>
 </table>
     </div>
@@ -112,39 +109,57 @@ $results=mysql_query($q);
 </form>
         </div>
              </div>
-      
+
     </div>
   </div>
   <script type="text/javascript">
    setTimeout(function() {
     $('#myModal').modal();
-}, 2000);
+}, 10000);
 </script>
 	<div id="page">
-	<nav class="fh5co-nav" role="navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Abramo Nogcci</a></div>
-				</div>
-				<div class="col-md-6 col-xs-6 text-center menu-1">
-					<ul>
-						<li class="has-dropdown">
-							<a href="product.php">Collection</a>
-							<!--<ul class="dropdown">
-								<li><a href="single.html">Single Shop</a></li>
-							</ul>-->
-						</li>
-						<li><a href="about.html">About</a></li>
-						
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-				
-			</div>
-			
-		</div>
-	</nav>
+    <nav class="fh5co-nav" role="navigation">
+  		<div class="container">
+  			<div class="row">
+  				<style type="text/css">
+  				   .mobileShow { display: none;}
+  				   /* Smartphone Portrait and Landscape */
+  				   @media only screen
+  				   and (min-device-width : 320px)
+  				   and (max-device-width : 480px){ .mobileShow { display: inline;}}
+  				</style>
+
+  				<div class="col-md-3 col-xs-2">
+  					<div class="mobileShow">
+  					<div id="fh5co-logo"><a href="index.html">Abramo</a></div>
+  					<div id="fh5co-logo"><a href="index.html">Nogcci</a></div>
+  				</div>
+  			</div>
+
+  				<div class="col-md-6 col-xs-6 text-center menu-1">
+  				<ul>
+  					<div id="content-desktop">
+  				<li><div id="fh5co-logo"><a href="index.html"><h3><strong>Abramo Nogcci</strong></h3></a></div></li>
+  </div>
+  				</ul>
+  				<hr>
+  					<ul>
+  						<li> <!--class="has-dropdown"-->
+  							<a href="product.php">Collection</a>
+  							<!--<ul class="dropdown">
+  								<li><a href="single.html">Single Shop</a></li>
+  							</ul>-->
+  						</li>
+  						<li><a href="about.html">About us</a></li>
+
+  						<li><a href="contact.html">Contact us</a></li>
+  					</ul>
+  				</div>
+
+  			</div>
+
+  		</div>
+  	</nav>
 
 	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/thumb/4/1.jpg);">
 		<div class="overlay"></div>
@@ -161,31 +176,30 @@ $results=mysql_query($q);
 			</div>
 		</div>
 	</header>
-	
+
 	<div id="fh5co-product">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<span>Cool Stuff</span>
 					<h2>Shoes</h2>
-					
+
 				</div>
 			</div>
-			<form action="single.php" method="post">
+
 			 <?php
 			 $array=array();
  while($row = mysql_fetch_assoc($results,MYSQL_ASSOC)) {
   $array[]=$row;
   }
-  for($j=0;$j<sizeof($array);$j++)
+  for($j=0;$j<9;$j++)
 {
-	if($j%3==0)
+	/*if($j%3==1)
 	{
- 	?>
 
-			<div class="row">
-			<?php
-		}
+			echo '<div class="row">';
+
+		}*/
 		?>
 							<div class="col-md-4 text-center animate-box">
 					<div class="product">
@@ -199,162 +213,138 @@ $results=mysql_query($q);
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html"><?php 
-							echo $array[$j]['name'];
+							<h3><?php
+							echo "<h3><a class='icon' href=single.php?rajat=".$array[$j]['id']."&pro_name=".urlencode($array[$j]['name'])."></a>".$array[$j]['name']."</h3>";
+
+
 							?></a></h3>
-							
+
 						</div>
 					</div>
 				</div>
-				
-				<!--<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images<?php print $row['path']?>);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html"><?php 
-							print $row['name'+1];
-							
-							?></a></h3>
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images<?php print $row['path']?>);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html"><?php 
-							print $row['name'+2];
-							
-							?></a></h3>
-							
-						</div>
-					</div>
-				</div>-->
+
+
 				<?
+
 				}
-				if($j%3==0)
-				echo "</div>";
+
+
 mysql_close();
 ?>
-			
-			<!--
-			<div class="row">
-				<div class="col-md-4 text-center animate-box">
+
+
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+
+
+				</div>
+
+			 <?php
+
+  for($j=9;$j<18;$j++)
+{
+
+		?>
+							<div class="col-md-4 text-center animate-box">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-4.jpg);">
+						<div class="product-grid" style="background-image:url(images<?php print $array[$j]['path']?>);">
 							<div class="inner">
 								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
+									<?
+									echo "<a class='icon' href=single.php?rajat=".$array[$j]['id']."&pro_name=".urlencode($array[$j]['name'])."><i class='icon-eye'></i></a>";
+									?>
 								</p>
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">Alato Cabinet</a></h3>
-							<span class="price">$800</span>
+							<h3><?php
+							echo "<h3><a class='icon' href=single.php?rajat=".$array[$j]['id']."&pro_name=".urlencode($array[$j]['name'])."></a>".$array[$j]['name']."</h3>";
+
+
+							?></a></h3>
+
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 text-center animate-box">
+
+
+				<?
+
+				}
+?>
+<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+
+
+				</div>
+			 <?php
+
+  for($j=18;$j<24;$j++)
+{
+
+		?>
+							<div class="col-md-4 text-center animate-box">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-5.jpg);">
+						<div class="product-grid" style="background-image:url(images<?php print $array[$j]['path']?>);">
 							<div class="inner">
 								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
+									<?
+									echo "<a class='icon' href=single.php?rajat=".$array[$j]['id']."&pro_name=".urlencode($array[$j]['name'])."><i class='icon-eye'></i></a>";
+									?>
 								</p>
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">Earing Wireless</a></h3>
-							<span class="price">$100</span>
+							<h3><?php
+							echo "<h3><a class='icon' href=single.php?rajat=".$array[$j]['id']."&pro_name=".urlencode($array[$j]['name'])."></a>".$array[$j]['name']."</h3>";
+
+
+							?></a></h3>
+
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 text-center animate-box">
+
+
+				<?
+
+				}
+?>
+<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+
+
+				</div>
+			 <?php
+
+  for($j=24;$j<25;$j++)
+{
+
+		?>
+							<div class="col-md-4 text-center animate-box">
 					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-6.jpg);">
+						<div class="product-grid" style="background-image:url(images<?php print $array[$j]['path']?>);">
 							<div class="inner">
 								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
+									<?
+									echo "<a class='icon' href=single.php?rajat=".$array[$j]['id']."&pro_name=".urlencode($array[$j]['name'])."><i class='icon-eye'></i></a>";
+									?>
 								</p>
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">Sculptural Coffee Table</a></h3>
-							<span class="price">$960</span>
+							<h3><?php
+							echo "<h3><a class='icon' href=single.php?rajat=".$array[$j]['id']."&pro_name=".urlencode($array[$j]['name'])."></a>".$array[$j]['name']."</h3>";
+
+
+							?></a></h3>
+
 						</div>
 					</div>
 				</div>
-			</div>-->
-			<!--
-			<div class="row">
-				<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-7.jpg);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html">The WW Chair</a></h3>
-							<span class="price">$540</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-8.jpg);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html">Himitsu Money Box</a></h3>
-							<span class="price">$55</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 text-center animate-box">
-					<div class="product">
-						<div class="product-grid" style="background-image:url(images/product-9.jpg);">
-							<div class="inner">
-								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
-									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
-								</p>
-							</div>
-						</div>
-						<div class="desc">
-							<h3><a href="single.html">Ariane Prin</a></h3>
-							<span class="price">$99</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			-->
+
+
+				<?
+
+				}
+?>
 		</div>
 	</div>
 
@@ -402,7 +392,7 @@ mysql_close();
 					<ul class="fh5co-footer-links">
 						<li><a href="product.php">Shop</a></li>
 						<li><a href="#">Privacy</a></li>
-						
+
 					</ul>
 				</div>
 
@@ -410,7 +400,7 @@ mysql_close();
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
-				
+
 					<p>
 						<ul class="fh5co-social-icons">
 							<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -429,7 +419,7 @@ mysql_close();
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -449,4 +439,3 @@ mysql_close();
 
 	</body>
 </html>
-

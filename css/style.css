@@ -7,9 +7,18 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
+#content-desktop {
+display: inline;
+}
+
+#content-mobile {
+display: none;
+}
+
+
 body {
   font-family: "Playfair Display", serif;
   font-weight: 400;
