@@ -366,14 +366,14 @@ mysql_close();
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 					<ul class="fh5co-footer-links">
 						<li><a href="about.html">About</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 					<ul class="fh5co-footer-links">
 						<li><a href="product.php">Shop</a></li>
-						<li><a href="#">Privacy</a></li>
+						<li><a href="policy.html">Policy</a></li>
 						
 					</ul>
 				</div>

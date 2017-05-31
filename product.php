@@ -72,7 +72,7 @@ $results=mysql_query($q);
 	<body>
 
 	<div class="fh5co-loader"></div>
-	 <div class="modal fade" id="myModal" role="dialog">
+	    <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
 
       <!-- Modal content-->
@@ -91,14 +91,21 @@ $results=mysql_query($q);
         <td><input type="text" name="first_name" placeholder="Name" required /></td>
     </tr>
     <tr>
-        <td><label style="font-size:18px;">Email</label></td>
+        <td><label style="font-size:18px; font-family: 'Tangerine';">Email</label></td>
         <td width="30"></td>
         <td><input type="email" name="last_name" placeholder="Email" required /></td>
     </tr>
+
     <tr>
         <td><label style="font-size:18px;">Select your Image</label></td>
         <td width="30"></td>
-        <td><input type="file" name="image"  class="btn btn-primary"></td>
+        <td><label class="btn btn-default btn-file">
+    Browse <input type="file"  name="image"  style="display: none;">
+</label></td>
+
+    </tr>
+    <tr>
+    <td><a href="policy.html">Upload Policy</a></td>
     </tr>
 </table>
     </div>
@@ -384,14 +391,14 @@ mysql_close();
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 					<ul class="fh5co-footer-links">
 						<li><a href="about.html">About</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 					<ul class="fh5co-footer-links">
 						<li><a href="product.php">Shop</a></li>
-						<li><a href="#">Privacy</a></li>
+						<li><a href="policy.html">Policy</a></li>
 
 					</ul>
 				</div>
