@@ -161,10 +161,12 @@ $p=$_GET['pro_name'];
 					<div class="row animate-box">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading" >
 							<h2><?php echo $p?></h2>
-							<!--<p>
-								<a href="#" class="btn btn-primary btn-outline btn-lg">Add to Cart</a>
-								<a href="#" class="btn btn-primary btn-outline btn-lg">Compare</a>
-							</p>-->
+							<p>
+							<form action ="add_to_cart.php" method="post">
+							 <input name="product_code" type="hidden" value="<?php echo $r?>">
+    <button class="btn btn-primary btn-outline btn-lg" type="submit">Add to Cart</button>			
+    </form>					
+							</p>
 						</div>
 					</div>
 				</div>

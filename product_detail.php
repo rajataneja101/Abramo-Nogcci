@@ -4,6 +4,11 @@ $db=mysql_select_db("abramo");
 // Check connection
   $q="SELECT * FROM shoes";
 $results=mysql_query($q);
+if(!isset($_SESSION['products']))
+{
+$_SESSION['products']=array();
+}
+
   ?>
 <!DOCTYPE HTML>
 <html>
